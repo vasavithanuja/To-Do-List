@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Profile</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app dashboard-app">
+
+    <div class="page-header">
+
+        <a href="dashboard.html" class="back-button">
+            ←
+        </a>
+
+        <h1>Profile</h1>
+
+    </div>
+
+    <section class="profile-section">
+
+        <div class="profile-avatar">
+            👤
+        </div>
+
+        <h2 id="profileName">
+            User
+        </h2>
+
+        <p id="profileEmail">
+            user@email.com
+        </p>
+
+    </section>
+
+    <div class="profile-card">
+
+        <h3>Account Details</h3>
+
+        <div class="profile-item">
+
+            <span>👤</span>
+
+            <div>
+                <p class="profile-label">Name</p>
+                <p id="accountName">User</p>
+            </div>
+
+        </div>
+
+        <div class="profile-item">
+
+            <span>📧</span>
+
+            <div>
+                <p class="profile-label">Email</p>
+                <p id="accountEmail">
+                    user@email.com
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <button
+        class="logout-btn"
+        onclick="logoutUser()">
+
+        Logout
+
+    </button>
+
+    <nav class="bottom-nav">
+
+        <a href="dashboard.html" class="nav-item">
+            🏠
+            <span>Home</span>
+        </a>
+
+        <a href="add-task.html" class="nav-item">
+            ➕
+            <span>Add</span>
+        </a>
+
+        <a href="profile.html" class="nav-item active">
+            👤
+            <span>Profile</span>
+        </a>
+
+    </nav>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

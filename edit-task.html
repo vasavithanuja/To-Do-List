@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Edit Task</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="form-page">
+
+        <div class="page-header">
+
+            <a href="dashboard.html" class="back-button">
+                ←
+            </a>
+
+            <h1>Edit Task</h1>
+
+        </div>
+
+        <p class="form-subtitle">
+            Update your task details
+        </p>
+
+        <form id="editTaskForm">
+
+            <label for="editTaskTitle">
+                Task Title
+            </label>
+
+            <input
+                type="text"
+                id="editTaskTitle"
+                placeholder="Enter your task"
+                required
+            >
+
+            <label for="editTaskDescription">
+                Description
+            </label>
+
+            <textarea
+                id="editTaskDescription"
+                placeholder="Enter task description"
+                rows="4"></textarea>
+
+            <label for="editTaskDate">
+                Due Date
+            </label>
+
+            <input
+                type="date"
+                id="editTaskDate"
+                required
+            >
+
+            <label for="editTaskPriority">
+                Priority
+            </label>
+
+            <select id="editTaskPriority">
+
+                <option value="Low">Low</option>
+
+                <option value="Medium">
+                    Medium
+                </option>
+
+                <option value="High">
+                    High
+                </option>
+
+            </select>
+
+            <button type="submit">
+                Update Task
+            </button>
+
+        </form>
+
+        <a href="dashboard.html" class="back-home">
+            Cancel
+        </a>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
